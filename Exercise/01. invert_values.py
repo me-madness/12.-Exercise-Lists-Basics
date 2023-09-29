@@ -1,4 +1,5 @@
 # First way
+
 list_with_numbers = input().split()
 opposite_numbers = []
 for number in list_with_numbers:
