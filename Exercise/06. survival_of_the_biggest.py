@@ -1,9 +1,10 @@
 numbers = input()
 magic_number = int(input())
-current_number = 0
+current_number = []
 for number in numbers:
-    if current_number < numbers:
-        current_number.append(number)
+    current_input = number
+    if current_input < number:
+        current_number = number
             
     
 print(current_number)    
