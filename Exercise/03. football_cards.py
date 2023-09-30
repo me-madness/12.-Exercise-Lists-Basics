@@ -5,7 +5,7 @@ red_card = False
 
 empty_list = [] 
 
-for card in range(card_input):
+for card in card_input:
     if "A-" in card:
         card.remove(team_a)
     elif "B-" in card:
