@@ -9,9 +9,11 @@ for card in card_input:
     if "A-" in card:
         team_a.remove(card)
     elif "B-" in card:
-        team_b.remove(card)   
-        print(f"Team A - {team_a}; Team B - {team_b}.")
-        if team_a < 7 or team_b < 7:
-            red_card = True   
-            print("Game was terminated")        
+        team_b.remove(card)
+        print(f"Team A - {len(team_a)}; Team B - {len(team_b)}.") 
+        if "A-"  not in team_a or "B-" not in team_b:
+            del(card)          
+    if len(team_a) < 7 or len(team_b) < 7:
+        red_card = True 
+        print("Game was terminated")        
 
