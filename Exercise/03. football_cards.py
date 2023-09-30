@@ -10,3 +10,8 @@ for card in card_input:
         card.remove(team_a)
     elif "B-" in card:
         card.remove(team_b)   
+        print(f"Team A - {team_a}; Team B - {team_b}.")
+        if team_a < 7 or team_b < 7:
+            red_card = True   
+            print("Game was terminated")        
+
