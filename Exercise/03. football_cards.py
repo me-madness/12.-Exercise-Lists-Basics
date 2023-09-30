@@ -7,9 +7,9 @@ red_card = False
 
 for card in card_input:
     if "A-" in card:
-        card.remove(team_a)
+        team_a.remove(card)
     elif "B-" in card:
-        card.remove(team_b)   
+        team_b.remove(card)   
         print(f"Team A - {team_a}; Team B - {team_b}.")
         if team_a < 7 or team_b < 7:
             red_card = True   
