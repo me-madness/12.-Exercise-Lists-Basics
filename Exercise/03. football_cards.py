@@ -1,19 +1,16 @@
 team_a = ["A-1", "A-2", "A-3", "A-4", "A-5", "A-6", "A-7", "A-8", "A-9", "A-10", "A-11"]
 team_b = ["B-1", "B-2", "B-3", "B-4", "B-5", "B-6", "B-7", "B-8", "B-9", "B-10", "B-11"]
-card_input = input().split(' ')
+card_input = input().split()
 red_card = False
 
-# empty_list = [] 
-
 for card in card_input:
-    if "A-" in card:
+    if card in team_a:
         team_a.remove(card)
-    elif "B-" in card:
-        team_b.remove(card)
-        print(f"Team A - {len(team_a)}; Team B - {len(team_b)}") 
-        if "A-"  not in team_a or "B-" not in team_b:
-            del(card)          
+    elif card in team_b:
+        team_b.remove(card)                  
     if len(team_a) < 7 or len(team_b) < 7:
         red_card = True 
-        print("Game was terminated")        
-
+        break
+print(f"Team A - {len(team_a)}; Team B - {len(team_b)}") 
+if red_card:
+    print("Game was terminated")        
