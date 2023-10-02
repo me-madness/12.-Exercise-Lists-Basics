@@ -3,3 +3,5 @@ count_of_beggars = int(input())
 money_integers = []
 for current_money in line_of_input:
     money_integers.append(int(current_money))
+final_sum = []
+start_index = 0
