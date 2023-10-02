@@ -10,3 +10,4 @@ while start_index < money_integers:
     for current_index in range(start_index, len(money_integers),count_of_beggars):
         current_beggar_sum += money_integers[current_index]
     final_sum.append(current_beggar_sum)
+    start_index += 1
