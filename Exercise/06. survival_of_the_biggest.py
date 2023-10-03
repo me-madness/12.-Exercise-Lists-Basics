@@ -1,11 +1,11 @@
 numbers = input()
 magic_number = int(input())
-current_number = []
+current_number = 0
 for number in numbers:
-    current_input = number
-    if current_input < number:
-        current_number.append(number)
+    if current_number < number:
+        current_number = int(number)
+        print(current_number, end=" ")
     
             
     
-print(current_number)    
+# print(current_number)    
