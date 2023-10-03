@@ -1,11 +1,10 @@
-numbers = input()
+numbers = input().split()
 magic_number = int(input())
-current_number = 0
+current_number = []
 for number in numbers:
-    if current_number < number:
-        current_number = int(number)
-        print(current_number, end=" ")
-    
+    current_number.append(number)
+for _ in range(magic_number):
+    current_number.remove(min(current_number))    
             
     
-# print(current_number)    
+print(*current_number, sep=", ")    
